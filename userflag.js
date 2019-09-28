@@ -7,8 +7,12 @@ document.getElementById("配信を始める").onclick = function() {
 //ユーザーの位置情報をマップに落とし込み
 
 //「配信を見る」ボタンを押したらuserflagは0で維持（操作なし）
-<input type="button" value="(見る)" onclick="(マップからユーザーネームを取得する)"/>
-//ピンの中のユーザーネームを取得し、roomNameに渡す
+<input type="button" value="(見る)" onclick="(location.assign('http://マップのページ.com');)"/>
+//マップのページへ遷移する
+
+//選択されたピンの情報（phpを参照）を取得し、roomNameに渡す
+var roomName = document.getElementById('value');
+var roomNames = JSON.parse(item.dataset.fruit);
 
 //ルームに入るタイミングで、userflagの値を判定して切り替え
 if( userflag = 1){　
